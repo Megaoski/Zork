@@ -76,9 +76,79 @@ int main()
 			yourposition = BARRIER;
 			break;
 		}
+		case BARRIER1: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIER1;
+			break;
+		}
+		case BARRIER2: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIER2;
+			break;
+		}
+		case BARRIER3: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIER3;
+			break;
+		}
+		case BARRIER4: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIER4;
+			break;
+		}
+		case BARRIER5: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIER5;
+			break;
+		}
+		case BARRIER6: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIER6;
+			break;
+		}
+		case BARRIER7: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIER7;
+			break;
+		}
 		case BARRIERCAMP:{
 			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
 			yourposition = BARRIERCAMP;
+			break;
+		}
+		case BARRIERFOREST: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIERFOREST;
+			break;
+		}
+		case BARRIERCASTLE: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIERCASTLE;
+			break;
+		}
+		case BARRIERBARN: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIERBARN;
+			break;
+		}
+		case BARRIERSTEPPES: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIERSTEPPES;
+			break;
+		}
+		case BARRIERCAVE: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIERCAVE;
+			break;
+		}
+		case BARRIERTHRONE: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIERTHRONE;
+			break;
+		}
+		case BARRIERPORTAL: {
+			cout << "\nYou are clashing against an spiritual barrier that doesn't let you go ahead";
+			yourposition = BARRIERPORTAL;
 			break;
 		}
 		default:
