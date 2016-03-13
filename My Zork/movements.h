@@ -28,10 +28,18 @@
 #define BARRIERTHRONE 21
 #define BARRIER7 22//barreras portal
 #define BARRIERPORTAL 23
+#define BARNINTERIOR 24//barn objects
+#define BARNEXTERIOR 25
+#define BARNWALLEAST 26
+#define BARNWALLWEST 27
+#define BARNWALLSOUTH 28
+#define BARNWALLNORTH 29
+
 
 
 using namespace std;
 
 int Movement(int, char);
+
 
 #endif

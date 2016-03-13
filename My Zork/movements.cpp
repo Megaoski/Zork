@@ -35,6 +35,12 @@ int Movement(int room,char direction){
 		else if (room == BARRIER6) return PORTAL;
 		else if (room == BARRIERPORTAL) return BARRIER7;
 		else if (room == BARRIER7) return BARRIERPORTAL;
+		else if (room == BARNINTERIOR) return BARNWALLNORTH;
+		else if (room == BARNEXTERIOR) return CASTLE;
+		else if (room == BARNWALLNORTH) return BARNWALLNORTH;
+		else if (room == BARNWALLSOUTH) return BARNWALLNORTH;
+		else if (room == BARNWALLEAST) return BARNWALLNORTH;
+		else if (room == BARNWALLWEST) return BARNWALLNORTH;
 		
 		break;
 	}
@@ -64,6 +70,12 @@ int Movement(int room,char direction){
 		else if (room == BARRIER6) return CAVE;
 		else if (room == BARRIERPORTAL) return THRONE;
 		else if (room == BARRIER7) return THRONE;
+		else if (room == BARNINTERIOR) return BARNWALLSOUTH;
+		else if (room == BARNEXTERIOR) return BARRIER3;
+		else if (room == BARNWALLSOUTH) return BARNWALLSOUTH;
+		else if (room == BARNWALLNORTH) return BARNWALLSOUTH;
+		else if (room == BARNWALLEAST) return BARNWALLSOUTH;
+		else if (room == BARNWALLWEST) return BARNWALLSOUTH;
 		break;
 	}
 	case'w':{
@@ -89,6 +101,12 @@ int Movement(int room,char direction){
 		else if (room == BARRIER6) return BARRIERTHRONE;
 		else if (room == BARRIERPORTAL) return BARRIER7;
 		else if (room == BARRIER7) return BARRIERPORTAL;
+		else if (room == BARNINTERIOR) return BARNWALLWEST;
+		else if (room == BARNEXTERIOR) return BARRIER3;
+		else if (room == BARNWALLWEST) return BARNWALLWEST;
+		else if (room == BARNWALLEAST) return BARNWALLWEST;
+		else if (room == BARNWALLSOUTH) return BARNWALLWEST;
+		else if (room == BARNWALLNORTH) return BARNWALLWEST; 
 		break;
 	}
 	case'e':{
@@ -116,16 +134,38 @@ int Movement(int room,char direction){
 		else if (room == BARRIER6) return BARRIERTHRONE;
 		else if (room == BARRIERPORTAL) return BARRIER7;
 		else if (room == BARRIER7) return BARRIERPORTAL;
+		else if (room == BARNINTERIOR) return BARNWALLEAST;
+		else if (room == BARNEXTERIOR) return STEPPES;
+		else if (room == BARNWALLEAST) return BARNWALLEAST;
+		else if (room == BARNWALLWEST) return BARNWALLEAST;
+		else if (room == BARNWALLSOUTH) return BARNWALLEAST;
+		else if (room == BARNWALLNORTH) return BARNWALLEAST;
 		
 		break;
 	}
-	default: 
+	
+	case 'o':{
+		if (room == BARNINTERIOR) return BARNEXTERIOR;
+		else if (room == BARN) return BARNINTERIOR;
+		else if (room == BARNEXTERIOR) return BARNINTERIOR;
+		else if (room == BARNWALLNORTH) return BARNEXTERIOR;
+		else if (room == BARNWALLEAST) return BARNEXTERIOR;
+		else return printf("That's not a direction...");
+		break;
+	}
+	default: {
 		return printf("That's not a direction...");
 		break;
+	}
 
 	}
 		}
-	
+
+
+
+
+
+
 
 
 
