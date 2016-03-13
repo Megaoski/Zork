@@ -56,14 +56,14 @@ int main()
 					
 		case BARN: {
 			cout << "\nYou see a barn. The door seems closed";
-			cout << "\n You get close to the barn but the door is closed. Do you open it or follow your way?('o' n/s/w/e)";
+			cout << "\nYou get close to the barn but the door is closed. Do you open it or follow your way?('o' n/s/w/e)";
 			
 			yourposition = BARN;
 			break;
 		
 					 }
 		case BARNINTERIOR: {
-			cout << "\nYou entered the barn!";
+			cout << "\nYou entered the barn. Use'o' to go outside or explore it to find more exits!";
 			yourposition = BARNINTERIOR;
 			break;
 		}

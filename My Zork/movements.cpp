@@ -153,7 +153,32 @@ int Movement(int room,char direction){
 		else if (room == BARNEXTERIOR) return BARNINTERIOR;
 		else if (room == BARNWALLNORTH) return BARNEXTERIOR;
 		else if (room == BARNWALLEAST) return BARNEXTERIOR;
-		else return printf("That's not a command...");
+		else if (room == BARNWALLSOUTH) return VOIDBARN;
+		else if (room == BARNWALLWEST) return VOIDBARN;
+		else if (room == CAMPFIRE) return VOID;
+		else if (room == DARKFOREST) return VOID1;
+		else if (room == CASTLE) return VOID2;
+		else if (room == STEPPES) return VOID4;
+		else if (room == CAVE) return VOID5;
+		else if (room == THRONE) return VOID6;
+		else if (room == PORTAL) return VOID7;
+		else if (room == BARRIERCAMP) return VOID;
+		else if (room == BARRIER) return VOID;
+		else if (room == BARRIERFOREST) return VOID1;
+		else if (room == BARRIER1) return VOID1;
+		else if (room == BARRIERCASTLE) return VOID2;
+		else if (room == BARRIER2) return VOID2;
+		else if (room == BARRIERBARN) return VOID3;
+		else if (room == BARRIER3) return VOID3;
+		else if (room == BARRIERSTEPPES) return VOID4;
+		else if (room == BARRIER4) return VOID4;
+		else if (room == BARRIERCAVE) return VOID5;
+		else if (room == BARRIER5) return VOID5;
+		else if (room == BARRIERTHRONE) return VOID6;
+		else if (room == BARRIER6) return VOID6;
+		else if (room == BARRIERPORTAL) return VOID7;
+		else if (room == BARRIER7) return VOID7;
+		
 		break;
 	}
 	
