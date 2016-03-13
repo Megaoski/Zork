@@ -95,6 +95,8 @@ int Movement(int room,char direction){
 		else if (room == BARRIER2) return BARRIERCASTLE;
 		else if (room == BARRIERBARN) return BARRIER3;
 		else if (room == BARRIER3) return BARRIERBARN;
+		else if (room == BARRIERSTEPPES) return BARN;
+		else if (room == BARRIER4) return BARN;
 		else if (room == BARRIERCAVE) return CASTLE;
 		else if (room == BARRIER5) return CASTLE;
 		else if (room == BARRIERTHRONE) return BARRIER6;
@@ -153,6 +155,7 @@ int Movement(int room,char direction){
 		else return printf("That's not a direction...");
 		break;
 	}
+	
 	default: {
 		return printf("That's not a direction...");
 		break;

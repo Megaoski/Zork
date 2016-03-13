@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 #include"movements.h"
-#include"character.h"
+
 
 
 
@@ -14,19 +14,24 @@ int main()
 {
 	
 
-	Player player1;
+	
+
+	char name;
+	char* names = &name;
+	names = new char[10];
+
 	char input;
 	int yourposition = CAMPFIRE; 
 	
 	
 	
 
-	cout << "Input a name for your character: \n" ;
-	cin >> player1.name;
+	cout << "Input a name for your character: (maximum 20 characters)" ;
+	cin >> names;
 	
-	cout << "Welcome  " << player1.name <<"!"<< endl;
+	cout << "\nWelcome  " << names <<"!"<< endl;
 	cout << "\n Now you are in Nildal's campfire"<<endl;
-	cout << "Which direction you want to go?(n/s/w/e)? Remember that if you wanna exit the game you have to press 'q'." << endl;
+	cout << "\nWhich direction you want to go?(n/s/w/e)? Remember that if you wanna exit the game you have to press 'q'." << endl;
 	
 	
 
@@ -52,7 +57,7 @@ int main()
 					
 		case BARN: {
 			cout << "\nYou see a barn. The door seems closed";
-			cout << "\n You get close to the barn but the door is closed. Do you open it or go away?('o'/'g')";
+			cout << "\n You get close to the barn but the door is closed. Do you open it or follow your way?('o' n/s/w/e)";
 			
 			yourposition = BARN;
 			break;
@@ -64,13 +69,13 @@ int main()
 			break;
 		}
 		case BARNEXTERIOR: {
-			cout << "\nYou are outside the barn! Do you wanna go inside again or follow your way?('o'  n/s/w/e)";
+			cout << "\nYou are outside the barn! Do you wanna open the door and go inside again or follow your way?('o'  n/s/w/e)";
 			yourposition = BARNEXTERIOR;
 			break;
 
 		}
 		case BARNWALLEAST:{
-			cout << "\nYou see a door. Do you wanna open it('o') or not ('u')?";
+			cout << "\nYou see a door. Do you wanna open it('o') or continue exploring?";
 			yourposition = BARNWALLEAST;
 			break;
 
@@ -86,7 +91,7 @@ int main()
 			break;
 		}
 		case BARNWALLNORTH:{
-			cout << "\nYou see a door. Do you wanna open it('o') or not('u')?";
+			cout << "\nYou see a door. Do you wanna open it('o') or continue exploring?";
 			yourposition = BARNWALLNORTH;
 			break;
 		}
@@ -203,6 +208,7 @@ int main()
 	}//FIN DEL LOOP
 	
 
+	delete[10] names;//deleting memory allocated for the name of the player
 
 
 	getchar();
