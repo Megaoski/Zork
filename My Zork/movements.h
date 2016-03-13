@@ -34,6 +34,15 @@
 #define BARNWALLWEST 27
 #define BARNWALLSOUTH 28
 #define BARNWALLNORTH 29
+#define VOID 30
+#define VOID1 31
+#define VOID2 32
+#define VOID3 33
+#define VOID4 34
+#define VOID5 35
+#define VOID6 36
+#define VOID7 37
+#define VOIDBARN 38
 
 
 

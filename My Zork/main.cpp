@@ -16,9 +16,8 @@ int main()
 
 	
 
-	char name;
-	char* names = &name;
-	names = new char[10];
+	
+	string name;
 
 	char input;
 	int yourposition = CAMPFIRE; 
@@ -26,10 +25,10 @@ int main()
 	
 	
 
-	cout << "Input a name for your character: (maximum 20 characters)" ;
-	cin >> names;
+	cout << "Input a name for your character: " ;
+	cin >> name;
 	
-	cout << "\nWelcome  " << names <<"!"<< endl;
+	cout << "\nWelcome  " << name <<"!"<< endl;
 	cout << "\n Now you are in Nildal's campfire"<<endl;
 	cout << "\nWhich direction you want to go?(n/s/w/e)? Remember that if you wanna exit the game you have to press 'q'." << endl;
 	
@@ -197,6 +196,51 @@ int main()
 			yourposition = BARRIERPORTAL;
 			break;
 		}
+		case VOID:{
+			cout << "\nThat's not a direction...";
+			yourposition = CAMPFIRE;
+			break;
+		}
+		case VOID1:{
+			cout << "\nThat's not a direction...";
+			yourposition = DARKFOREST;
+			break;
+		}
+		case VOID2:{
+			cout << "\nThat's not a direction...";
+			yourposition = CASTLE;
+			break;
+		}
+		case VOID3:{
+			cout << "\nThat's not a direction...";
+			yourposition = BARN;
+			break;
+		}
+		case VOID4:{
+			cout << "\nThat's not a direction...";
+			yourposition = STEPPES;
+			break;
+		}
+		case VOID5:{
+			cout << "\nThat's not a direction...";
+			yourposition = CAVE;
+			break;
+		}
+		case VOID6:{
+			cout << "\nThat's not a direction...";
+			yourposition = THRONE;
+			break;
+		}
+		case VOID7:{
+			cout << "\nThat's not a direction...";
+			yourposition = PORTAL;
+			break;
+		}
+		case VOIDBARN:{
+			cout << "\nThat's not a direction...";
+			yourposition = BARNINTERIOR;
+			break;
+		}
 		default:
 			
 			break;
@@ -208,7 +252,7 @@ int main()
 	}//FIN DEL LOOP
 	
 
-	delete[10] names;//deleting memory allocated for the name of the player
+	
 
 
 	getchar();
